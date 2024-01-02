@@ -1,0 +1,66 @@
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+}
+.cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selection-area{
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  width: 200px;
+}
+
+.select-mark{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select-mark > p{
+}
+#X, #O{
+  display: inline;
+  margin: 5px;
+  width: 50px;
+
+}
+
+.play-with{
+  display: flex;
+  flex-direction: column;
+}
+
+#multi-player, #bot{
+  margin: 5px;
+}
+.cell{
+  border: 2px solid red;
+}
+
+.active-button{
+  background-color: rgb(236, 183, 158);
+}
+
+.inactive-button{
+  background-color: rgb(228, 221, 221);
+}
+
+.mark{
+  font-size: 50px;
+}
